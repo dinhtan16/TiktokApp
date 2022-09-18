@@ -1,9 +1,9 @@
-import Header from '~/components/Layout/components/Header';
+import Header from '../components/Header/Header';
 function DefaultLayout({ children }) {
     return (
         <div>
             <Header />
-            <div className="contaner">
+            <div className="container">
                 <div className="content">{children}</div>
             </div>
         </div>

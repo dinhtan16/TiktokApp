@@ -1,8 +1,8 @@
 import { HeaderOnly } from '~/components/Layout';
-import Home from '~/Pages/Home';
-import Follow from '~/Pages/Follow';
-import Profile from '~/Pages/Profile';
-import Upload from '~/Pages/Upload';
+import Home from '../Pages/Home/Home';
+import Follow from '../Pages/Follow/Follow';
+import Profile from '../Pages/Profile/Profile';
+import Upload from '../Pages/Upload/Upload';
 //ko dang nhap van xem dc
 const publicRoutes = [
     {
@@ -24,6 +24,6 @@ const publicRoutes = [
     },
 ];
 // dang nhap moi xem dc
-const privatRoutes = [];
+const privateRoutes = [];
 
-export { publicRoutes, privatRoutes };
+export { publicRoutes, privateRoutes };

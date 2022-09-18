@@ -5,10 +5,10 @@
 }
 .container {
     width: 1150px;
-    background-color: rgb(100, 198, 165);
     display: flex;
+    padding: 0 var(--default-layout-horizontal-spacer);
+    // margin: auto;
 }
 .content {
     flex: 1;
-    background-color: orange;
 }

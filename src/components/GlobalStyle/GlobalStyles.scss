@@ -5,6 +5,10 @@
 :root {
     --default-layout-header-height: 60px;
     --default-layout-header-width: 1150px;
+    --black: #000;
+    --text-color: #333;
+    --white: #fff;
+    --default-layout-horizontal-spacer: 24px;
 }
 
 html {
@@ -18,4 +22,39 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+}
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a[href] {
+    color: var(--text-color);
+    text-decoration: none;
+}
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
 }
